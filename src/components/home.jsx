@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <h1>Home Page</h1>
-      <Link to={'/about'}>About</Link>
+      <Link to={'/about'}>About</Link> |<Link to={'/courses'}>Courses</Link>
     </>
   );
 };
