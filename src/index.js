@@ -6,6 +6,7 @@ import Courses from './components/courses';
 import Course1 from './components/course1';
 import Course2 from './components/course2';
 import Content from './components/content';
+import Dashboard from './components/dashboard';
 
 //using "as " for naming shorter
 import {
@@ -24,6 +25,8 @@ ReactDOM.render(
       {/* Navigate to redirect one url to another url  */}
       <Route path="/home" element={<Navigate replace to="/" />} />
       <Route path="/about" element={<About />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+
       {/* used pair Route for nesting more routes inside of it */}
       {/* need to put Outlet component tn parent component */}
       <Route path="/courses" element={<Courses />}>
