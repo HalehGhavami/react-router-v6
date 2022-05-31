@@ -28,7 +28,12 @@ ReactDOM.render(
       {/* need to put Outlet component tn parent component */}
       <Route path="/courses" element={<Courses />}>
         {/* nested route path don't have "/"  */}
-        <Route path="course1" element={<Course1 />} />
+        {/* for having URL paramas we use also nested Route but pair one ! */}
+        {/* IMPORTANT !need to put Outlet component tn parent component */}
+
+        <Route path="course1" element={<Course1 />}>
+          <Route path=":id" element={<Content />} />
+        </Route>
         <Route path="course2" element={<Course2 />} />
       </Route>
 
