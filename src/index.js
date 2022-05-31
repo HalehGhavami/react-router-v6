@@ -17,7 +17,7 @@ ReactDOM.render(
     <Routes>
       {/* element attribute instaed of component attribute in last version */}
       {/* Navigate to redirect one url to another url  */}
-      <Route path="/home" element={<Navigate to="/" />} />
+      <Route path="/home" element={<Navigate replace to="/" />} />
       <Route path="/about" element={<About />} />
       {/* rendering Home with both excat / and /home in path  without need to use "excat" or Switch*/}
       <Route path="/" element={<Home />} />
