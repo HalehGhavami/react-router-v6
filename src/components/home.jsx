@@ -8,7 +8,8 @@ const Home = () => {
       <button
         onClick={() => {
           //navigate is a function
-          navigate('/dashboard');
+          //passing second argument and receiving it by useLocation on other component which are redirected
+          navigate('/dashboard', { state: 'Haleh' });
         }}
       >
         Login
