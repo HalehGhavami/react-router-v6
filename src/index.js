@@ -5,6 +5,7 @@ import Home from './components/home';
 import Courses from './components/courses';
 import Course1 from './components/course1';
 import Course2 from './components/course2';
+import Content from './components/content';
 
 //using "as " for naming shorter
 import {
@@ -24,6 +25,7 @@ ReactDOM.render(
       <Route path="/home" element={<Navigate replace to="/" />} />
       <Route path="/about" element={<About />} />
       {/* used pair Route for nesting more routes inside of it */}
+      {/* need to put Outlet component tn parent component */}
       <Route path="/courses" element={<Courses />}>
         {/* nested route path don't have "/"  */}
         <Route path="course1" element={<Course1 />} />
